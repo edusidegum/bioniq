@@ -1,0 +1,431 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><style>
+@page {
+    size: A4;
+    margin: 2.2cm 2.4cm;
+    @bottom-center { content: counter(page); font-family: 'Liberation Serif', 'DejaVu Serif', serif; font-size: 9pt; color: #999; }
+}
+@page :first { @bottom-center { content: none; } }
+
+body {
+    font-family: 'Liberation Serif', 'DejaVu Serif', serif;
+    font-size: 11.5pt;
+    line-height: 1.6;
+    color: #1a1a1a;
+}
+body p, body li { text-align: left; }
+
+h1 {
+    font-family: 'Liberation Sans', 'DejaVu Sans', sans-serif;
+    font-size: 23pt;
+    line-height: 1.2;
+    text-align: left;
+    color: #8be3a1;
+    margin: 0 0 0.6em;
+    padding-bottom: 0.3em; border-bottom: 1px solid #8be3a133;
+}
+h2 { font-family: 'Liberation Sans', 'DejaVu Sans', sans-serif; font-size: 16pt; color: #8be3a1; margin: 1.3em 0 0.4em; }
+h3 { font-family: 'Liberation Sans', 'DejaVu Sans', sans-serif; font-size: 13pt; color: #8be3a1; margin: 1.1em 0 0.3em; }
+
+p { margin: 0 0 0.7em; orphans: 2; widows: 2; }
+
+ul, ol { margin: 0 0 0.7em 1.4em; }
+li { margin: 0 0 0.2em; }
+
+/* Structured content stays left-aligned even when prose is justified. */
+table { border-collapse: collapse; width: 100%; margin: 0.8em 0; font-size: 10.5pt; }
+th, td { border: 1px solid #bbb; padding: 5px 9px; text-align: left; }
+th { background: #f2f2f2; font-family: 'Liberation Sans', 'DejaVu Sans', sans-serif; }
+code { font-family: 'Liberation Mono', 'DejaVu Sans Mono', monospace; font-size: 10pt; background: #f4f4f4; padding: 1px 4px; border-radius: 3px; }
+pre { background: #f6f6f6; padding: 11px 13px; border-radius: 5px; white-space: pre-wrap; font-size: 10pt; line-height: 1.45; text-align: left; }
+pre code { background: none; padding: 0; }
+blockquote { margin: 0.6em 0; padding: 0.2em 0 0.2em 1em; border-left: 3px solid #ccc; color: #555; font-style: italic; }
+img { max-width: 100%; }
+</style></head><body><h1>Bioniq | Nutrição de Precisão e Protocolo Pro2Col</h1><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bioniq | Nutrição de Precisão e Protocolo Pro2Col</title>
+  <meta name="description" content="Página institucional e de captura de intenção sobre Nutrição de Precisão Bioniq, com foco em biomarcadores, personalização nutricional, compliance e pré-cadastro." />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+  <meta name="theme-color" content="#0b1f14" />
+  <style>
+    :root{
+      --bg:#07120d;
+      --panel:#0d1d16;
+      --panel-2:#10261d;
+      --text:#eef6f1;
+      --muted:#b9c7bf;
+      --accent:#8be3a1;
+      --accent-2:#d4f2dd;
+      --line:rgba(255,255,255,.10);
+      --shadow:0 18px 42px rgba(0,0,0,.25);
+      --radius:18px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top, rgba(139,227,161,.12), transparent 35%),
+        linear-gradient(180deg, #08130e 0%, #05100b 100%);
+      line-height:1.6;
+    }
+    a{color:var(--accent-2); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .skip-link{
+      position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;
+    }
+    .skip-link:focus{left:16px; top:16px; width:auto; height:auto; padding:10px 14px; background:#fff; color:#000; z-index:9999; border-radius:10px}
+    header, main, footer{width:100%}
+    .wrap{max-width:var(--max); margin:0 auto; padding:0 20px}
+    .topbar{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter:blur(14px);
+      background:rgba(5,16,11,.82);
+      border-bottom:1px solid var(--line);
+    }
+    .topbar-inner{
+      display:flex; align-items:center; justify-content:space-between; gap:18px;
+      padding:14px 0;
+    }
+    .brand{
+      display:flex; align-items:center; gap:14px; min-width:0;
+    }
+    .brand img{width:48px; height:48px; object-fit:contain; border-radius:12px; background:rgba(255,255,255,.04); padding:6px; border:1px solid var(--line)}
+    .brand strong{display:block; font-size:1rem; letter-spacing:.2px}
+    .brand span{display:block; color:var(--muted); font-size:.9rem}
+    nav ul{display:flex; gap:14px; list-style:none; margin:0; padding:0; flex-wrap:wrap; justify-content:flex-end}
+    nav a{display:inline-flex; align-items:center; padding:8px 12px; border:1px solid var(--line); border-radius:999px; background:rgba(255,255,255,.03)}
+    .hero{
+      padding:48px 0 28px;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:22px;
+      align-items:stretch;
+    }
+    .card{
+      background:linear-gradient(180deg, rgba(16,38,29,.95), rgba(10,24,18,.95));
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+    }
+    .hero-copy{padding:32px}
+    .eyebrow{
+      display:inline-flex; align-items:center; gap:8px;
+      color:var(--accent);
+      font-weight:700; letter-spacing:.08em; text-transform:uppercase; font-size:.8rem;
+      margin-bottom:14px;
+    }
+    h1,h2,h3{line-height:1.15; margin:0 0 14px}
+    h1{font-size:clamp(2rem, 5vw, 4rem)}
+    h2{font-size:clamp(1.5rem, 3vw, 2.4rem)}
+    h3{font-size:1.18rem}
+    p{margin:0 0 14px; color:var(--muted); font-size:1.02rem}
+    .lead{font-size:1.15rem; color:#eff8f2}
+    .hero-points{display:grid; gap:12px; grid-template-columns:repeat(2, minmax(0,1fr)); margin-top:20px}
+    .point{
+      padding:14px 15px; border:1px solid var(--line); border-radius:14px; background:rgba(255,255,255,.03)
+    }
+    .point strong{display:block; color:#fff; margin-bottom:4px}
+    .side-panel{padding:24px}
+    .side-box{padding:18px; border-radius:16px; background:rgba(255,255,255,.03); border:1px solid var(--line); margin-bottom:14px}
+    .badge{
+      display:inline-flex; padding:6px 10px; border-radius:999px; background:rgba(139,227,161,.12); color:var(--accent-2); border:1px solid rgba(139,227,161,.25); font-size:.85rem; font-weight:600;
+    }
+    .cta-row{display:flex; flex-wrap:wrap; gap:12px; margin-top:20px}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; padding:13px 18px; border-radius:14px; font-weight:700; border:1px solid transparent; cursor:pointer;
+    }
+    .btn-primary{background:linear-gradient(180deg, #94e6a8, #67c985); color:#082012}
+    .btn-secondary{background:transparent; color:var(--text); border-color:var(--line)}
+    .section{padding:18px 0 40px}
+    .section-grid{display:grid; gap:20px}
+    .content-card{padding:28px}
+    .grid-2{display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:18px}
+    .grid-3{display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:18px}
+    .mini{font-size:.92rem; color:var(--muted)}
+    .list{margin:12px 0 0; padding-left:20px; color:var(--muted)}
+    .list li{margin-bottom:10px}
+    .panel{
+      padding:18px; border-radius:16px; background:rgba(255,255,255,.03); border:1px solid var(--line);
+    }
+    table{width:100%; border-collapse:collapse; overflow:hidden; border-radius:14px; margin-top:10px}
+    th, td{padding:14px 12px; border-bottom:1px solid var(--line); vertical-align:top; text-align:left}
+    th{background:rgba(139,227,161,.09); color:#fff}
+    tr:last-child td{border-bottom:none}
+    .form-wrap{display:grid; grid-template-columns:1fr .9fr; gap:18px; align-items:start}
+    form{display:grid; gap:12px}
+    label{font-weight:600; color:#f3faf5; font-size:.95rem}
+    input, select, textarea{
+      width:100%; border-radius:12px; border:1px solid var(--line); background:#091510; color:var(--text); padding:13px 14px; font:inherit;
+    }
+    textarea{min-height:120px; resize:vertical}
+    .helper{font-size:.88rem; color:var(--muted)}
+    .fineprint{font-size:.86rem; color:#9fafa6}
+    .footer{padding:34px 0 44px; border-top:1px solid var(--line); margin-top:20px; background:rgba(0,0,0,.12)}
+    .footer-grid{display:grid; grid-template-columns:1.2fr .8fr; gap:20px}
+    .footer small, .footer p{font-size:.92rem}
+    .footer-links{display:flex; flex-wrap:wrap; gap:10px; margin-top:10px}
+    .footer-links a{padding:8px 12px; border:1px solid var(--line); border-radius:999px; background:rgba(255,255,255,.03)}
+    .notice{
+      border-left:4px solid var(--accent);
+      padding:16px 18px; background:rgba(139,227,161,.08); border-radius:12px;
+    }
+    .section-anchor{scroll-margin-top:92px}
+    .muted-box{padding:18px; border-radius:16px; background:rgba(255,255,255,.025); border:1px solid var(--line)}
+    .logo-box{display:flex; justify-content:center; align-items:center; min-height:230px; border-radius:18px; border:1px dashed rgba(255,255,255,.18); background:rgba(255,255,255,.02); text-align:center; padding:24px}
+    .logo-box img{max-width:100%; height:auto; object-fit:contain}
+    @media (max-width: 960px){
+      .hero-grid,.grid-2,.grid-3,.form-wrap,.footer-grid{grid-template-columns:1fr}
+      .topbar-inner{flex-direction:column; align-items:flex-start}
+      nav ul{justify-content:flex-start}
+      .hero-copy{padding:24px}
+    }
+  </style>
+</head>
+<body id="topo">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topbar" role="banner">
+    <div class="wrap topbar-inner">
+      <div class="brand" aria-label="Marca e identificação">
+        <img src="https://edusidegum.github.io/menu/img/Herbalife-Logo.webp" alt="Logo do Distribuidor Independente Herbalife" />
+        <div>
+          <strong>Eduardo Sidegum</strong>
+          <span>Distribuidor Independente Herbalife • Novo Hamburgo/RS</span>
+        </div>
+      </div>
+      <nav aria-label="Navegação principal">
+        <ul>
+          <li><a href="/menu/manifesto.html">Manifesto</a></li>
+          <li><a href="#conceito">Conceito</a></li>
+          <li><a href="#comparativo">Comparativo</a></li>
+          <li><a href="#pre-cadastro">Pré-cadastro</a></li>
+          <li><a href="#compliance">Compliance</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <article class="card hero-copy">
+          <div class="eyebrow">Tecnologia Bioniq • Nutrição de Precisão</div>
+          <h1>Bioniq: protocolo de precisão que antecipa a próxima geração da suplementação personalizada</h1>
+          <p class="lead">Está disponível apenas na Europa, e em breve no Brasil, aguarde e pré-cadastre-se para saber mais.</p>
+          <p>A proposta desta página é apresentar uma experiência institucional clara, confiável e orientada por biomarcadores, com posicionamento premium, linguagem educativa e estrutura pensada para indexação semântica, autoridade temática e conversão qualificada.</p>
+          <div class="hero-points">
+            <div class="point"><strong>Nutrição Personalizada Brasil</strong><span class="mini">Uma abordagem guiada por dados biológicos, com leitura mais precisa das necessidades individuais.</span></div>
+            <div class="point"><strong>Suplementos baseados em biomarcadores</strong><span class="mini">Uma lógica de precisão para apoiar rotina, consistência e acompanhamento mensal.</span></div>
+            <div class="point"><strong>Protocolo Pro2Col</strong><span class="mini">Arquitetura editorial para destacar ciência, método e clareza de proposta.</span></div>
+            <div class="point"><strong>Bioniq Herbalife Brasil</strong><span class="mini">Uma base de expectativa responsável, sem promessas inadequadas e com foco em compliance.</span></div>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#pre-cadastro">Quero ser avisado e receber acesso prioritário</a>
+            <a class="btn btn-secondary" href="/menu/manifesto.html">Acessar o Manifesto</a>
+          </div>
+        </article>
+
+        <aside class="card side-panel" aria-label="Painel de referência">
+          <div class="side-box">
+            <span class="badge">Posicionamento</span>
+            <h3>Ciência aplicada à personalização</h3>
+            <p>O foco é educar o visitante sobre nutrição de precisão, biomarcadores e o valor de uma jornada nutricional mais inteligente.</p>
+          </div>
+          <div class="side-box">
+            <h3>Disponibilidade e contexto</h3>
+            <p><strong>Europa:</strong> disponível em mercados selecionados.<br /><strong>Brasil:</strong> em fase de expectativa, sujeito a aprovações e adequações locais.</p>
+          </div>
+          <div class="logo-box">
+            <img src="https://edusidegum.github.io/menu/img/Herbalife-Logo.webp" alt="Logo do Distribuidor Independente Herbalife" />
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="conceito" class="section section-anchor">
+      <div class="wrap section-grid">
+        <article class="card content-card">
+          <h2>Por que suplementar o que seu corpo não precisa?</h2>
+          <div class="grid-2">
+            <div class="panel">
+              <h3>O problema da abordagem genérica</h3>
+              <p>Quando a estratégia não considera contexto individual, rotina e marcadores biológicos, a suplementação pode se tornar pouco objetiva e menos eficiente na prática editorial e comercial.</p>
+            </div>
+            <div class="panel">
+              <h3>A resposta baseada em dados</h3>
+              <p>Com a lógica de nutrição de precisão, a proposta é traduzir sinais do organismo em uma formulação mais coerente, orientada por questionário e, quando aplicável, exame laboratorial.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <article class="card content-card">
+          <h2>Seu próximo protocolo nutricional será desenhado a partir dos seus dados biológicos e laboratoriais.</h2>
+          <div class="grid-3">
+            <div class="panel">
+              <h3>Questionário orientado</h3>
+              <p>Levantamento de hábitos, rotina, preferências e contexto de uso para uma leitura inicial mais precisa.</p>
+            </div>
+            <div class="panel">
+              <h3>Base biomarcadora</h3>
+              <p>Quando disponível, a análise de marcadores auxilia a personalização da fórmula e o refinamento do protocolo.</p>
+            </div>
+            <div class="panel">
+              <h3>Entrega mensal</h3>
+              <p>A lógica recorrente favorece acompanhamento, consistência e uma experiência mais próxima do uso contínuo.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="comparativo" class="section section-anchor">
+      <div class="wrap">
+        <article class="card content-card">
+          <h2>Suplementação Genérica vs. Nutrição de Precisão</h2>
+          <p>Comparação editorial para educar, qualificar o interesse e reforçar a diferença entre uma abordagem ampla e um sistema baseado em dados.</p>
+          <div style="overflow:auto;">
+            <table aria-label="Tabela comparativa entre suplementação genérica e nutrição de precisão">
+              <thead>
+                <tr>
+                  <th>Critério</th>
+                  <th>Suplementação Genérica</th>
+                  <th>Nutrição de Precisão</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Base de decisão</td>
+                  <td>Escolha ampla, orientada por percepção geral</td>
+                  <td>Questionário, contexto individual e biomarcadores</td>
+                </tr>
+                <tr>
+                  <td>Personalização</td>
+                  <td>Baixa ou moderada</td>
+                  <td>Alta, com fórmula desenhada sob medida</td>
+                </tr>
+                <tr>
+                  <td>Foco de experiência</td>
+                  <td>Produto</td>
+                  <td>Protocolo de precisão</td>
+                </tr>
+                <tr>
+                  <td>Comunicação</td>
+                  <td>Genérica e padronizada</td>
+                  <td>Educativa, baseada em dados e jornada consultiva</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="pre-cadastro" class="section section-anchor">
+      <div class="wrap form-wrap">
+        <article class="card content-card">
+          <h2>Lista VIP de pré-lançamento</h2>
+          <p>Seja uma das primeiras pessoas a receber atualização sobre a chegada da tecnologia Bioniq ao Brasil, com referência de atendimento em Novo Hamburgo/RS.</p>
+          <form action="#" method="post">
+            <div>
+              <label for="nome">Nome completo</label>
+              <input id="nome" name="nome" type="text" placeholder="Seu nome" />
+            </div>
+            <div>
+              <label for="whatsapp">WhatsApp</label>
+              <input id="whatsapp" name="whatsapp" type="tel" placeholder="(DDD) 99999-9999" />
+            </div>
+            <div>
+              <label for="objetivo">Objetivo de saúde</label>
+              <select id="objetivo" name="objetivo">
+                <option value="">Selecione</option>
+                <option>Energia e disposição</option>
+                <option>Composição corporal</option>
+                <option>Bem-estar e rotina</option>
+                <option>Performance e recuperação</option>
+                <option>Outro objetivo</option>
+              </select>
+            </div>
+            <div>
+              <label for="mensagem">Observação opcional</label>
+              <textarea id="mensagem" name="mensagem" placeholder="Conte brevemente o que você busca com nutrição de precisão."></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Quero ser avisado e receber acesso prioritário</button>
+            <p class="helper">Ao enviar, você concorda em receber comunicações relacionadas ao pré-lançamento e ao ecossistema de conteúdo.</p>
+          </form>
+        </article>
+
+        <aside class="card content-card">
+          <h3>Uma jornada de expectativa, não de promessa</h3>
+          <div class="notice">
+            <p><strong>Importante:</strong> a tecnologia Bioniq ainda depende de disponibilidade e aprovações regulatórias locais. Esta página não vende produto; ela organiza interesse, contexto e comunicação institucional.</p>
+          </div>
+          <div class="muted-box" style="margin-top:16px;">
+            <h3>O que o visitante percebe</h3>
+            <ul class="list">
+              <li>Autoridade e clareza de proposta.</li>
+              <li>Arquitetura semântica com H1, H2 e H3 bem distribuídos.</li>
+              <li>Comparação objetiva e leitura rápida.</li>
+              <li>Escopo consistente para SEO e confiança.</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="compliance" class="section section-anchor">
+      <div class="wrap">
+        <article class="card content-card">
+          <h2>Compliance, privacidade e identificação</h2>
+          <div class="grid-2">
+            <div class="panel">
+              <h3>Distribuidor Independente Herbalife</h3>
+              <p>Este site é mantido por <strong>Eduardo Sidegum</strong>, Distribuidor Independente Herbalife, com atuação institucional voltada à comunicação, educação e apresentação de soluções compatíveis com as diretrizes do ecossistema.</p>
+            </div>
+            <div class="panel">
+              <h3>LGPD e política de privacidade</h3>
+              <p>O módulo institucional de privacidade e consentimento deve ser carregado ao final do conteúdo, por meio do script do ecossistema, preservando a governança de cookies, base legal e registros de consentimento.</p>
+            </div>
+          </div>
+          <div class="notice" style="margin-top:16px;">
+            <p><strong>Disclaimers editoriais:</strong> conteúdo informativo; não substitui orientação profissional individual; o lançamento no Brasil está sujeito a disponibilidade, regras locais e demais aprovações aplicáveis.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="wrap footer-grid">
+      <div>
+        <h2 style="font-size:1.4rem; margin-bottom:10px;">Autoridade, consistência e evolução do ecossistema</h2>
+        <p>Esta página foi organizada para apoiar a construção de autoridade em arquitetura de sistemas, nutrição de precisão e comunicação institucional de alto padrão, com foco em clareza, semântica e experiência do usuário.</p>
+        <p class="fineprint">© 2026 Eduardo Sidegum • Distribuidor Independente Herbalife • Novo Hamburgo/RS</p>
+      </div>
+      <div>
+        <h3>Links institucionais</h3>
+        <div class="footer-links">
+          <a href="/menu/manifesto.html">Manifesto de Autoridade</a>
+          <a href="#compliance">Políticas e Privacidade</a>
+          <a href="#topo">Voltar ao topo</a>
+          <a href="#pre-cadastro">Lista VIP</a>
+        </div>
+        <p class="fineprint" style="margin-top:14px;">O bloco de inclusão institucional e LGPD deve ser carregado após este footer pelo arquivo <code>menu/scripts/bloco-incluir.js</code>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="menu/scripts/bloco-incluir.js" defer></script>
+</body>
+</html></body></html>
