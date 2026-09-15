@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /\.git/
+Disallow: /\.github/
+
+
+Sitemap: https://edusidegum.github.io/bioniq/sitemap.xml
